@@ -1,22 +1,23 @@
 🛒 Vishal E-commerce Sales Dashboard : Data Analysis Project
 Analyzing sales and profitability data to track performance, identify top-selling categories, and inform strategic decisions for the Vishal E-commerce business.
 
-📌 Table of Contents
-<a href="#overview">Overview</a>
+---
 
-<a href="#business-problem">Business Problem</a>
+## 📌 Table of Contents
+- <a href="#overview">Overview</a>
+- <a href="#business-problem">Business Problem</a>
+- <a href="#dataset">Dataset</a>
+- <a href="#tKey Analytical Areas">Tools & Technologies</a>
+- <a href="#Dataset">Project Structure</a>
+- <a href="#Tools & Technologies">Data Cleaning & Preparation</a>
+- <a href="#Project Structure">Key Analytical Areas</a>
+- <a href="#Core Metrics & Status">Research Questions & Key Findings</a>
+- <a href="#dashboard">Dashboard</a>
+- <a href="#Final Recommendations">Data Flow & Linkage</a>
+- <a href="#final-recommendations">Final Recommendations</a>
 
-<a href="#dataset">Dataset</a>
+---
 
-<a href="#tools--technologies">Tools & Technologies</a>
-
-<a href="#project-structure">Project Structure</a>
-
-<a href="#core-metrics-and-status">📈 Core Metrics and Performance Status</a>
-
-<a href="#dashboard">📊 Dashboard</a>
-
-<a href="#final-recommendations">Final Recommendations</a>
 
 
 <h2><a class="anchor" id="overview"></a>Overview</h2>
