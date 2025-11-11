@@ -57,19 +57,17 @@ The store faced challenges in understanding which states, products, and customer
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
 ```
-OLA-Rider-Retention-Strategy/
-├── README.md                                 (The main project documentation file)
-├── Ola_Analytics_Dashboard.pbix              (The final, interactive Power BI file)
-├── Ola_Data_Queries.sql                      (Contains all SQL transformation, aggregation, and View creation scripts)
+Vishal-Ecommerce-Sales-Dashboard/
+├── README.md
+├── Vishal_Ecommerce_Sales.pbix
 ├── Source_Data/
-│   └── OLA_Booking_Data.csv                  (The raw 100,000 row dataset)
-└── Visualizations/                           (Snapshots of key dashboard sections)
-    ├── Ola_Dashboards_Full_View.jpg          
-    ├── Ola_Performance_Summary.png           (Visual for Step 1: Overall Performance)
-    ├── Ola_Vehicle_Metrics.png               (Visual for Step 2: Vehicle Type Breakdown)
-    ├── Ola_Revenue_Trends.png                (Visual for Step 3: Revenue Insights)
-    ├── Ola_Cancellations_Analysis.png        (Visual for Step 4: Cancellation Analysis)
-    └── Ola_Ratings_Overview.png              (Visual for Step 5: Ratings Overview)
+│ └── Vishal_Ecommerce_Data.csv
+└── Visualizations/
+├── Vishal_Sales_Overview.png
+├── Statewise_Performance.png
+├── Profit_by_Category.png
+├── Customer_Insights.png
+└── PaymentMode_Distribution.png
 ```
 <h2><a class="anchor" id="exploratory-data-analysis-eda"></a>📈 Core Metrics & Findings</h2>
 
