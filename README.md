@@ -68,6 +68,7 @@ Vishal-Ecommerce-Sales-Dashboard/
 ├── Profit_by_Category.png
 ├── Customer_Insights.png
 └── PaymentMode_Distribution.png
+
 ```
 <h2><a class="anchor" id="exploratory-data-analysis-eda"></a>📈 Core Metrics & Findings</h2>
 
