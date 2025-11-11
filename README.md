@@ -1,5 +1,8 @@
-🛒 Vishal E-commerce Sales Dashboard : Data Analysis Project
-Analyzing sales and profitability data to track performance, identify top-selling categories, and inform strategic decisions for the Vishal E-commerce business.
+# 🛒 Vishal E-commerce Sales Dashboard — Data Analysis Project
+
+_ADeveloped an interactive Power BI dashboard to analyze the sales, profit, quantity, and customer behavior data for Vishal E-commerce Store, uncovering insights into state-wise performance, product categories, and payment preferences to support strategic decision-making._
+
+  ![Image](https://github.com/user-attachments/assets/f771dec2-aa66-48b4-be37-b8de32ec71c8) <img width="1796" height="724" alt="Image" src="https://github.com/user-attachments/assets/461b8b77-3a3f-49bd-aac1-2b419480566e" />
 
 ---
 
@@ -16,10 +19,9 @@ Analyzing sales and profitability data to track performance, identify top-sellin
 - <a href="#Final Recommendations">Data Flow & Linkage</a>
 - <a href="#final-recommendations">Final Recommendations</a>
 
----
 <h2><a class="anchor" id="overview"></a>Overview</h2>
 
-This project analyzes **100,000 rows** of OLA ride-hailing data to evaluate key operational metrics, including booking success rates, cancellation causes, and vehicle performance. The insights derived from this analysis are used to formulate a data-driven strategy aimed at significantly improving both **rider and driver retention**.
+This project focuses on analyzing **Vishal E-commerce Store’s** transactional data to understand sales performance, profitability, and customer purchasing behavior across different states, categories, and payment modes. The Power BI dashboard presents a consolidated view of all **key performance indicators (KPIs) and enables drill-down analysis to identify trends, profitable segments, and improvement areas**.
 
 ---
 <h2><a class="anchor" id="🛑 The Core Business Problem"></a>Business Problem</h2>
