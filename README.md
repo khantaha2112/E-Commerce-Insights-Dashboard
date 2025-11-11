@@ -1,6 +1,6 @@
 # 🛒 Vishal E-commerce Sales Dashboard — Data Analysis Project
 
-_ADeveloped an interactive Power BI dashboard to analyze the sales, profit, quantity, and customer behavior data for Vishal E-commerce Store, uncovering insights into state-wise performance, product categories, and payment preferences to support strategic decision-making._
+_Developed an interactive Power BI dashboard to analyze the sales, profit, quantity, and customer behavior data for Vishal E-commerce Store, uncovering insights into state-wise performance, product categories, and payment preferences to support strategic decision-making._
 
   ![Image](https://github.com/user-attachments/assets/f771dec2-aa66-48b4-be37-b8de32ec71c8) <img width="1796" height="724" alt="Image" src="https://github.com/user-attachments/assets/461b8b77-3a3f-49bd-aac1-2b419480566e" />
 
@@ -32,6 +32,7 @@ The store faced challenges in understanding which states, products, and customer
 - Optimize inventory and marketing strategies.
 - Evaluate the effectiveness of different payment modes.
 ---
+
 <h2><a class="anchor" id="dataset"></a>Dataset Used</h2>
 
 - <a href="https://drive.google.com/file/d/1NYLYydSPw8ALOWH9B6mWkpXb57dQtV_O/view?usp=sharing">Ola Booking Sep25 Data</a>
