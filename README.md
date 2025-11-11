@@ -39,12 +39,12 @@ The store faced challenges in understanding which states, products, and customer
 ---
 <h2><a class="anchor" id="🔎Key Analytical Areas Addressed by the OLA Project"></a>Key Analytical Areas </h2>
 
-High cancellation rates (both customer and driver-initiated) and inconsistent service quality directly impact OLA's revenue and market share. The analysis aims to address the following pain points::
-- **💰 Sales Trends Analysis:** Evaluation of historical booking patterns (Ride Volume and Total Booking Value) to understand overall revenue health and growth.
-- **🚗 Vehicle Type Performance:** Analysis of vehicle-specific metrics (performance, distance, and booking value impact) to optimize fleet utilization and pricing.
-- **❌ Cancellation Analysis:** Pinpointing the primary reasons for customer and driver-initiated cancellations to identify friction points and reduce revenue l
-- **⭐ Ratings and Quality Analysis:** Comparing Customer and Driver ratings to diagnose service quality gaps and target specific areas for improvement.
-- **🌍 Geospatial & Time-Series Dependency:** Investigation of ride demand, cancellation spikes, and successful bookings across different geographic regions and time-based factors (e.g., peak hours, weekends, seasonal weather).
+- Sales & Profit Analysis: Identify total revenue, profit, and quantity trends.
+- State-wise Performance: Evaluate which states contribute the most to sales and profit.
+- Category & Sub-Category Insights: Assess product category contributions and profitability.
+- Customer Insights: Highlight top customers driving sales volume.
+- Payment Mode Analysis: Understand the preferred payment modes among customers.
+- Seasonal Trends: Monthly profit trends to spot seasonal spikes and dips.
 ---
 
 <h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
