@@ -26,12 +26,11 @@ This project focuses on analyzing **Vishal E-commerce Store’s** transactional 
 ---
 <h2><a class="anchor" id="🛑 The Core Business Problem"></a>Business Problem</h2>
 
-High cancellation rates (both customer and driver-initiated) and inconsistent service quality directly impact OLA's revenue and market share. The analysis aims to address the following pain points:
-- **Revenue Leakage:** Unsuccessful bookings (cancellations and incomplete rides) result in lost revenue opportunities.
-- **Customer Churn:** Frequent or unexplained cancellations lead to customer dissatisfaction and a high probability of customers switching to competitors.
-- **Driver Dissatisfaction:** Inefficient routing, low ratings, or unfair cancellation penalties can lead to driver churn, reducing the overall fleet supply.
-- **ISub-optimal Fleet Performance:** Lack of clarity on which vehicle types (e.g., Mini, Sedan, Prime) are most profitable or efficient prevents optimized resource allocation and pricing.
-
+The store faced challenges in understanding which states, products, and customer segments contribute most to revenue and profit. Without clear visibility into these patterns, it was difficult to:
+- Identify high-performing regions and categories.
+- Understand the profitability across sub-categories.
+- Optimize inventory and marketing strategies.
+- Evaluate the effectiveness of different payment modes.
 ---
 <h2><a class="anchor" id="dataset"></a>Dataset Used</h2>
 
