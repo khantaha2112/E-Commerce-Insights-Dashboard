@@ -71,31 +71,34 @@ OLA-Rider-Retention-Strategy/
     ├── Ola_Cancellations_Analysis.png        (Visual for Step 4: Cancellation Analysis)
     └── Ola_Ratings_Overview.png              (Visual for Step 5: Ratings Overview)
 ```
-<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>📈 OLA Bookings and Cancellation Metrics</h2>
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>📈 Core Metrics & Findings</h2>
 
 **🎯 Core Volume & Value :**
-- **Total Bookings:** $\text{100,000}$ (Total number of ride requests received).
-- **Total Booking Value:** $\text{26.97M}$ (Total revenue generated from all successful bookings).
-- **Successful Rides:** $\text{26,924}$ ($\text{100,000}$ Total Bookings minus $\text{73,076}$ Total Cancellations).
+- Total Sales Amount: 438K
+- Total Profit: 37K
+- Total Quantity Sold: 5615
 
 **❌ Cancellation Breakdown :**
 - **Total Cancellations:** $\text{73,076}$ (Total count of rides canceled, both driver and customer).
 - **Driver-Cancelled Rides:** $\text{45,416}$ (Represents $\text{62.15\%}$ of all cancellations, making it the primary cause of lost revenue).
 - **Customer-Cancelled Rides:** $\text{22,530}$ (The count of rides canceled by the customer).
 
-**⭐ Service Quality Metrics:**
-- **Overall Driver Rating:** $\text{4.30}$
+**⭐ Top Insights:**
+- Maharashtra contributed the highest sales, followed by Madhya Pradesh.
+- Clothing dominates with 63% of total quantity sold, while Furniture and Electronics contribute 17% and 21% respectively.
+- Cash on Delivery (44%) is the most preferred payment method.
+- Highest profit months were January and December, indicating strong seasonal demand.
+
 - **Overall Customer Rating:** $\text{4.01}$
 ---
 <h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
 
 **📊Power BI Dashboard shows:**
-- **Ride Volume and Status (Success/Cancellation)**
-- **Total Revenue and Payment Method Breakdown**
-- **Customer and Driver Ratings Distribution**
-- **Cancellation Reason Heatmaps (Customer vs. Driver)**
-
-<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+- KPIs for Total Sales, Profit, Quantity, and AOV.
+- Bar charts for State-wise and Customer-wise performance.
+- Donut charts for Category and Payment Mode breakdowns.
+- Line/Bar visual for Monthly Profit Trends.
+- Comparative chart of Profit by Sub-Category.
 
 - **Incentivize Drivers** in high-cancellation zones to improve availability and reduce $\text{Driver-Cancelled}$ rides.
 - **Implement Dynamic Pricing** strategies during peak demand periods (weekends, rush hours) to maximize revenue and match supply.
