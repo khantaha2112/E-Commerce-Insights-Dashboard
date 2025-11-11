@@ -100,12 +100,6 @@ Vishal-Ecommerce-Sales-Dashboard/
 - Line/Bar visual for Monthly Profit Trends.
 - Comparative chart of Profit by Sub-Category.
 
-- **Incentivize Drivers** in high-cancellation zones to improve availability and reduce $\text{Driver-Cancelled}$ rides.
-- **Implement Dynamic Pricing** strategies during peak demand periods (weekends, rush hours) to maximize revenue and match supply.
-- **Enhance App Communication** to provide customers with clear and immediate driver status updates to reduce $\text{Customer-Cancelled}$ rides.
-- **Develop a Driver Quality Program** to address low $\text{Customer Ratings}$ and target specific feedback (e.g., professionalism, vehicle cleanliness).
-- **Target Top-Spending Customers** with loyalty rewards and exclusive offers to improve overall rider retention.
-
 ---
 
 
