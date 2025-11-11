@@ -17,26 +17,91 @@ Analyzing sales and profitability data to track performance, identify top-sellin
 - <a href="#final-recommendations">Final Recommendations</a>
 
 ---
-
-
-
 <h2><a class="anchor" id="overview"></a>Overview</h2>
-This project analyzes Vishal E-commerce sales data to evaluate key financial and operational metrics, including revenue, profit, and customer behavior. The goal is to provide a comprehensive, interactive dashboard that allows stakeholders to monitor business health and make data-driven decisions.
 
-<h2><a class="anchor" id="business-problem"></a>Business Problem</h2>
-Vishal E-commerce needs a clear, centralized view of its performance to address core challenges:
+This project analyzes **100,000 rows** of OLA ride-hailing data to evaluate key operational metrics, including booking success rates, cancellation causes, and vehicle performance. The insights derived from this analysis are used to formulate a data-driven strategy aimed at significantly improving both **rider and driver retention**.
 
-Profitability Tracking: Lack of visibility into profit by category and sub-category prevents the optimization of pricing and promotional strategies.
+---
+<h2><a class="anchor" id="🛑 The Core Business Problem"></a>Business Problem</h2>
 
-Geographic Focus: Difficulty in identifying which states or regions are contributing the most (or least) to total revenue and profit.
+High cancellation rates (both customer and driver-initiated) and inconsistent service quality directly impact OLA's revenue and market share. The analysis aims to address the following pain points:
+- **Revenue Leakage:** Unsuccessful bookings (cancellations and incomplete rides) result in lost revenue opportunities.
+- **Customer Churn:** Frequent or unexplained cancellations lead to customer dissatisfaction and a high probability of customers switching to competitors.
+- **Driver Dissatisfaction:** Inefficient routing, low ratings, or unfair cancellation penalties can lead to driver churn, reducing the overall fleet supply.
+- **ISub-optimal Fleet Performance:** Lack of clarity on which vehicle types (e.g., Mini, Sedan, Prime) are most profitable or efficient prevents optimized resource allocation and pricing.
 
-Inventory & Demand Misalignment: Without clear sales trends by month, managing stock levels for seasonal items becomes inefficient, leading to inventory issues.
+---
+<h2><a class="anchor" id="dataset"></a>Dataset Used</h2>
 
-💾 <a class="anchor" id="dataset"></a>DatasetThe raw data is typically a single transactional CSV file (e.g., ecommerce_sales_data.csv) containing records for all sales.The key fields in the dataset include: Sales Amount, Profit, Quantity, Average Order Value ($\text{AOV}$), State, Category, Sub-Category, Customer Name, and Payment Mode.A summary table is created from this raw data for efficient visualization in Power BI.
+- <a href="https://drive.google.com/file/d/1NYLYydSPw8ALOWH9B6mWkpXb57dQtV_O/view?usp=sharing">Ola Booking Sep25 Data</a>
+---
+<h2><a class="anchor" id="🔎Key Analytical Areas Addressed by the OLA Project"></a>Key Analytical Areas </h2>
 
+High cancellation rates (both customer and driver-initiated) and inconsistent service quality directly impact OLA's revenue and market share. The analysis aims to address the following pain points::
+- **💰 Sales Trends Analysis:** Evaluation of historical booking patterns (Ride Volume and Total Booking Value) to understand overall revenue health and growth.
+- **🚗 Vehicle Type Performance:** Analysis of vehicle-specific metrics (performance, distance, and booking value impact) to optimize fleet utilization and pricing.
+- **❌ Cancellation Analysis:** Pinpointing the primary reasons for customer and driver-initiated cancellations to identify friction points and reduce revenue l
+- **⭐ Ratings and Quality Analysis:** Comparing Customer and Driver ratings to diagnose service quality gaps and target specific areas for improvement.
+- **🌍 Geospatial & Time-Series Dependency:** Investigation of ride demand, cancellation spikes, and successful bookings across different geographic regions and time-based factors (e.g., peak hours, weekends, seasonal weather).
+---
 
-💾 <a class="anchor" id="dataset"></a>DatasetThe raw data is typically a single transactional CSV file (e.g., ecommerce_sales_data.csv) containing records for all sales.The key fields in the dataset include: Sales Amount, Profit, Quantity, Average Order Value ($\text{AOV}$), State, Category, Sub-Category, Customer Name, and Payment Mode.A summary table is created from this raw data for efficient visualization in Power BI.
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
 
-🛠️ <a class="anchor" id="tools--technologies"></a>Tools & TechnologiesExcel/Google Sheet - Likely used for initial data cleaning, manipulation, and filtering of the raw sales data.SQL - (Hypothetical, often used for data preparation) Could be used to aggregate sales data, calculate monthly/quarterly metrics, and create analytical views.Power BI - The primary tool for developing the final interactive sales dashboard and visualizing all Key Performance Indicators ($\text{KPIs}$).GitHub - Used as a repository to store the project file (.pbix), scripts, and documentation
+- **Google Sheet** -  ( Used for basic data manipulation, cleanup, and filtering the initial dataset )
+- **SQL** -  ( Complex data transformation, including the use of Common Table Expressions (CTEs), Joins, and advanced Filtering to create analytical views (e.g., aggregating cancellation reasons )
+- **Power BI** -  ( Creation of the final interactive dashboard and Key Performance Indicator (KPI) tracking )
+- **GitHub** -  ( Repository for storing all project files, including SQL scripts and the Power BI file )
+
+---
+<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
+
+```
+OLA-Rider-Retention-Strategy/
+├── README.md                                 (The main project documentation file)
+├── Ola_Analytics_Dashboard.pbix              (The final, interactive Power BI file)
+├── Ola_Data_Queries.sql                      (Contains all SQL transformation, aggregation, and View creation scripts)
+├── Source_Data/
+│   └── OLA_Booking_Data.csv                  (The raw 100,000 row dataset)
+└── Visualizations/                           (Snapshots of key dashboard sections)
+    ├── Ola_Dashboards_Full_View.jpg          
+    ├── Ola_Performance_Summary.png           (Visual for Step 1: Overall Performance)
+    ├── Ola_Vehicle_Metrics.png               (Visual for Step 2: Vehicle Type Breakdown)
+    ├── Ola_Revenue_Trends.png                (Visual for Step 3: Revenue Insights)
+    ├── Ola_Cancellations_Analysis.png        (Visual for Step 4: Cancellation Analysis)
+    └── Ola_Ratings_Overview.png              (Visual for Step 5: Ratings Overview)
+```
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>📈 OLA Bookings and Cancellation Metrics</h2>
+
+**🎯 Core Volume & Value :**
+- **Total Bookings:** $\text{100,000}$ (Total number of ride requests received).
+- **Total Booking Value:** $\text{26.97M}$ (Total revenue generated from all successful bookings).
+- **Successful Rides:** $\text{26,924}$ ($\text{100,000}$ Total Bookings minus $\text{73,076}$ Total Cancellations).
+
+**❌ Cancellation Breakdown :**
+- **Total Cancellations:** $\text{73,076}$ (Total count of rides canceled, both driver and customer).
+- **Driver-Cancelled Rides:** $\text{45,416}$ (Represents $\text{62.15\%}$ of all cancellations, making it the primary cause of lost revenue).
+- **Customer-Cancelled Rides:** $\text{22,530}$ (The count of rides canceled by the customer).
+
+**⭐ Service Quality Metrics:**
+- **Overall Driver Rating:** $\text{4.30}$
+- **Overall Customer Rating:** $\text{4.01}$
+---
+<h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
+
+**📊Power BI Dashboard shows:**
+- **Ride Volume and Status (Success/Cancellation)**
+- **Total Revenue and Payment Method Breakdown**
+- **Customer and Driver Ratings Distribution**
+- **Cancellation Reason Heatmaps (Customer vs. Driver)**
+
+<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+
+- **Incentivize Drivers** in high-cancellation zones to improve availability and reduce $\text{Driver-Cancelled}$ rides.
+- **Implement Dynamic Pricing** strategies during peak demand periods (weekends, rush hours) to maximize revenue and match supply.
+- **Enhance App Communication** to provide customers with clear and immediate driver status updates to reduce $\text{Customer-Cancelled}$ rides.
+- **Develop a Driver Quality Program** to address low $\text{Customer Ratings}$ and target specific feedback (e.g., professionalism, vehicle cleanliness).
+- **Target Top-Spending Customers** with loyalty rewards and exclusive offers to improve overall rider retention.
+
+---
 
 
