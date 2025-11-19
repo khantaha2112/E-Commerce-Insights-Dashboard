@@ -2,7 +2,7 @@
 
 _Developed an interactive Power BI dashboard to analyze the sales, profit, quantity, and customer behavior data for Vishal E-commerce Store, uncovering insights into state-wise performance, product categories, and payment preferences to support strategic decision-making._
 
-  (<img width="1375" height="753" alt="Image" src="https://github.com/user-attachments/assets/5a667909-727b-4f4d-93b3-b6c18d0ddc99" /> />
+  <img width="1375" height="753" alt="Image" src="https://github.com/user-attachments/assets/5a667909-727b-4f4d-93b3-b6c18d0ddc99" /> 
 
 
 
